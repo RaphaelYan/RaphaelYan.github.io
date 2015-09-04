@@ -37,12 +37,7 @@ angular
             urlTrack = '/home';
         }
 
-        console.log(_gaq, window._gaq, $window._gaq);
-        $window._gaq.push(['_trackPageview', 'test1']);
-        window._gaq.push(['_trackPageview', 'test2']);
-        _gaq.push(['_trackPageview', 'test3']);
-        console.log('TRACK', urlTrack);
-        _gaq.push(['_trackPageview', urlTrack]);
+        $window._gaq.push(['_trackPageview', urlTrack]);
     });
 
     $rootScope.$on('$stateChangeError', function logError(event, to, toParams, from, fromParams, err) {
