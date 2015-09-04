@@ -28,7 +28,7 @@ angular
     $routeProvider.otherwise('/');
 }])
 
-.run(["$rootScope", "$state", "$log", function statesError($rootScope, $state, $log) {
+.run(["$rootScope", "$state", "$log", "$window", function statesError($rootScope, $state, $log, $window) {
 
     $rootScope.$on('$stateChangeSuccess', function logError(event, toState) {
         var urlTrack = toState.url;
@@ -37,6 +37,11 @@ angular
             urlTrack = '/home';
         }
 
+        console.log(_gaq, window._gaq, $window._gaq);
+        $window._gaq.push(['_trackPageview', 'test1']);
+        window._gaq.push(['_trackPageview', 'test2']);
+        _gaq.push(['_trackPageview', 'test3']);
+        console.log('TRACK', urlTrack);
         _gaq.push(['_trackPageview', urlTrack]);
     });
 
