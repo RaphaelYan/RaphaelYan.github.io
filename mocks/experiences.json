@@ -1,0 +1,86 @@
+{
+    "languages": [
+        { "order": 1, "name": "Javascript", "level": 5 },
+        { "order": 2, "name": "Shell",      "level": 3 },
+        { "order": 3, "name": "C++",        "level": 2 },
+        { "order": 4, "name": "C",          "level": 3 },
+        { "order": 5, "name": "PHP",        "level": 1 },
+        { "order": 6, "name": "JAVA",       "level": 1 }
+    ],
+    "framework": [
+        { "order": 1, "name": "AngularJS", "level": 5 },
+        { "order": 2, "name": "NodeJS",    "level": 2 }
+    ],
+    "systemBuilder": [
+        { "order": 1, "name": "Gulp",  "level": 3 },
+        { "order": 2, "name": "Grunt", "level": 1 }
+    ],
+    "integration": [
+        { "order": 1, "name": "Bootstrap", "level": 4 },
+        { "order": 2, "name": "SASS",      "level": 2 },
+        { "order": 3, "name": "HTML5",     "level": 4 },
+        { "order": 4, "name": "CSS3",      "level": 2 }
+    ],
+    "versioning": [
+        { "order": 1, "name": "GIT", "level": 4 },
+        { "order": 2, "name": "SVN", "level": 2 }
+    ],
+    "database": [
+        { "order": 1, "name": "MySQL",    "level": 2 },
+        { "order": 2, "name": "Postgres", "level": 1 }
+    ],
+    "ide": [
+        { "order": 1, "name": "Atom",           "level": 4 },
+        { "order": 2, "name": "Sublime Text 3", "level": 3 }
+    ],
+    "os": [
+        { "order": 1, "name": "OS X",    "level": 3 },
+        { "order": 2, "name": "Linux",   "level": 3 },
+        { "order": 3, "name": "Windows", "level": 5 }
+    ],
+    "projects": [
+        {
+            "from": "2014-11",
+            "to": "2015-09",
+            "company": "Alstom",
+            "jobTitle": "Technical Leader Front",
+            "shortDescription": "Review & improve internal websites",
+            "longDescription": ""
+        }, {
+            "from": "2014-03",
+            "to": "2014-08",
+            "company": "Fred&Farid",
+            "jobTitle": "Digital Producer",
+            "shortDescription": "Coordinate and manage digital websites",
+            "longDescription": ""
+        }, {
+            "from": "2013-08",
+            "to": "2014-02",
+            "company": "BeezUp",
+            "jobTitle": "Customer technical support",
+            "shortDescription": "Call clients, fix bugs on the platform and improve it",
+            "longDescription": ""
+        }, {
+            "from": "2012-04",
+            "to": "2012-08",
+            "company": "Wengo",
+            "jobTitle": "Web developer",
+            "shortDescription": "Facebook apps and database replications",
+            "longDescription": ""
+        }, {
+            "from": "2011-09",
+            "to": "2012-04",
+            "company": "Banque Populaire",
+            "jobTitle": "Java developer",
+            "shortDescription": "Client application Java/J2EE",
+            "longDescription": ""
+        }, {
+            "from": "2010-06",
+            "to": "2010-12",
+            "company": "Serum&Co",
+            "jobTitle": "Web developer",
+            "shortDescription": "Development of many small websites",
+            "longDescription": ""
+        }
+    ]
+}

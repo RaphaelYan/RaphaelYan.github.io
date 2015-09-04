@@ -1,0 +1,36 @@
+{
+    "networks": [
+        {
+            "order": 1,
+            "href": "mailto:raphael.yan89@gmail.com",
+            "display": "raphael.yan89@gmail.com",
+            "icon": "envelope-o"
+        }, {
+            "order": 2,
+            "href": "",
+            "display": "",
+            "icon": "twitter"
+        }, {
+            "order": 3,
+            "href": "https://github.com/RaphaelYan",
+            "display": "github/RaphaelYan",
+            "icon": "github"
+        }, {
+            "order": 4,
+            "href": "tel:0606634997",
+            "display": "06.06.63.49.97",
+            "icon": "mobile"
+        }, {
+            "order": 5,
+            "href": "",
+            "display": "",
+            "icon": "facebook"
+        }, {
+            "order": 6,
+            "href": "https://fr.linkedin.com/pub/rapha%C3%ABl-yan/89/388/52a",
+            "display": "linkedin/raphaël-yan",
+            "icon": "linkedin"
+        }
+    ],
+    "websites": []
+}
