@@ -9,7 +9,9 @@
     ],
     "framework": [
         { "order": 1, "name": "AngularJS", "level": 5 },
-        { "order": 2, "name": "NodeJS",    "level": 2 }
+        { "order": 2, "name": "NodeJS",    "level": 2 },
+        { "order": 3, "name": "Ionic",     "level": 0 },
+        { "order": 4, "name": "JQuery",    "level": 3 }
     ],
     "systemBuilder": [
         { "order": 1, "name": "Gulp",  "level": 3 },
@@ -27,11 +29,13 @@
     ],
     "database": [
         { "order": 1, "name": "MySQL",    "level": 2 },
-        { "order": 2, "name": "Postgres", "level": 1 }
+        { "order": 2, "name": "MongoDB",  "level": 0 },
+        { "order": 3, "name": "Postgres", "level": 1 }
     ],
     "ide": [
         { "order": 1, "name": "Atom",           "level": 4 },
-        { "order": 2, "name": "Sublime Text 3", "level": 3 }
+        { "order": 2, "name": "Sublime Text 3", "level": 3 },
+        { "order": 3, "name": "Vim",            "level": 1 }
     ],
     "os": [
         { "order": 1, "name": "OS X",    "level": 3 },
