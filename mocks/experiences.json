@@ -44,6 +44,13 @@
     ],
     "projects": [
         {
+            "from": "2015-10",
+            "to": "",
+            "company": "DonkeyCode",
+            "jobTitle": "FullStack developper",
+            "shortDescription": "Manage projects from A to Z",
+            "longDescription": ""
+        }, {
             "from": "2014-11",
             "to": "2015-09",
             "company": "Alstom",
