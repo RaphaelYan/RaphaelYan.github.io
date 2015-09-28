@@ -1,0 +1,36 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand">Raphaël Yan</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li ui-sref-active="active" ng-class="{ active: homeActive }">
+                    <a ui-sref="ltk.home">
+                        Home
+                    </a>
+                </li>
+                <li ui-sref-active="active">
+                    <a ui-sref="ltk.experiences">
+                        My experiences
+                    </a>
+                </li>
+                <li ui-sref-active="active">
+                    <a ui-sref="ltk.contact">
+                        Contact me
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container theme-showcase" role="main">
+    <div ui-view></div>
+</div>
+
+
+<p class="footer">
+    <div class="hr">&nbsp;</div>
+    <div class="copyright">© 2015 - All rights reserved</div>
+</p>

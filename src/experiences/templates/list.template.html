@@ -1,0 +1,38 @@
+<div class="col-xs-4">
+    <div ltk-bootstrap-title="My skills"></div>
+
+    <div ltk-experiences-skill-list="experiences.languages" title="Languages"></div>
+    <div ltk-experiences-skill-list="experiences.framework" title="Framework"></div>
+    <div ltk-experiences-skill-list="experiences.systemBuilder" title="System builder"></div>
+    <div ltk-experiences-skill-list="experiences.integration" title="Integration"></div>
+    <div ltk-experiences-skill-list="experiences.versioning" title="Versioning"></div>
+    <div ltk-experiences-skill-list="experiences.database" title="Database"></div>
+    <div ltk-experiences-skill-list="experiences.ide" title="IDE"></div>
+    <div ltk-experiences-skill-list="experiences.os" title="OS"></div>
+
+</div>
+<div class="col-xs-8">
+    <div ltk-bootstrap-title="My projects"></div>
+
+    <div class="timeline">
+
+        <article class="timeline-item {{ $index % 2 ? 'alt' : '' }}" ng-repeat="project in experiences.projects">
+            <div class="timeline-desk">
+                <div class="panel">
+                    <div class="panel-body"><!-- TODO: effect on hover -->
+                        <span class="arrow{{ $index % 2 ? '-alt': '' }}"></span>
+                        <span class="timeline-icon"></span>
+                        <h1 ng-if="project.to">From {{ project.from }} to {{ project.to }}</h1>
+                        <h1 ng-if="!project.to">Since {{ project.from }}</h1>
+                        <h4>{{ project.company + " - " + project.jobTitle }}</h4>
+                        <div class="notification" ng-if="project.shortDescription">
+                            {{ project.shortDescription }}
+                        </div>
+                        <!-- TODO: modal to show longDescription -->
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</div>

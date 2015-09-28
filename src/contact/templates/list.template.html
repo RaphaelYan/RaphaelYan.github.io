@@ -1,0 +1,19 @@
+<div ltk-bootstrap-title="Feel free to contact me !"></div>
+
+<div class="contact-networks">
+    <div class="col-xs-2 contact-icon" ng-repeat="network in contact.networks | orderBy: 'order'" ng-class="{disabled: !network.href}">
+        <a target="_blank" ng-href="{{ network.href }}">
+            <i class="fa fa-{{ network.icon }}"></i>
+            <span class="contact-text">{{ network.display }}</span>
+        </a>
+    </div>
+</div>
+
+<ul ng-if="contact.websites.length">
+    <li ng-repeat="website in contact.websites">
+        <a href="{{ website }}">
+            <i class="fa fa-globe"></i>
+            {{ website }}
+        </a>
+    </li>
+</ul>

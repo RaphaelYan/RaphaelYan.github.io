@@ -1,0 +1,11 @@
+{
+    "home": {
+        "api": "./mocks/home.json"
+    },
+    "experiences": {
+        "api": "./mocks/experiences.json"
+    },
+    "contact": {
+        "api": "./mocks/contact.json"
+    }
+}

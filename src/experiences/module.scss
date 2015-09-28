@@ -1,0 +1,128 @@
+/*skills*/
+.skill-type {
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.skill-line {
+    @extend .row;
+    padding: 5px 0px;
+    .circle {
+        float: left;
+        margin-right: 5px;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background-color: $inactive-color;
+    }
+    .circle.active {
+        background-color: $active-color;
+    }
+}
+
+/*projects*/
+
+.timeline {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    position: relative;
+    table-layout: fixed;
+    margin-top: 30px;
+    &:before {
+        background-color: #C7CBD6;
+        bottom: 0px;
+        content: "";
+        left: 50%;
+        position: absolute;
+        top: 0;
+        width: 2px;
+        z-index: 0;
+    }
+
+    .timeline-item {
+        display: table-row;
+        &:before, &.alt:after {
+            content: "";
+            display: block;
+            width: 50%;
+        }
+        &.alt {
+            &:before {
+                display: none;
+            }
+            .timeline-icon {
+                left: auto;
+                right: -32px;
+            }
+            .panel {
+                margin-left: 0;
+                margin-right: 25px;
+            }
+            .timeline-date {
+                left: auto;
+                right: -200px;
+                text-align: left;
+            }
+        }
+        .timeline-desk {
+            display: table-cell;
+            vertical-align: top;
+            width: 50%;
+            h1 {
+                font-size: 16px;
+                font-weight: 300;
+                margin: 0 0 5px;
+                color: #EF6F66;
+            }
+            .panel {
+                display: block;
+                margin-left: 25px;
+                position: relative;
+                text-align: left;
+                background: #F4F4F4;
+                margin-bottom: 5px;
+                border-radius: 10px;
+                .arrow, .arrow-alt {
+                    border-bottom: 8px solid transparent;
+                    border-top: 8px solid transparent;
+                    display: block;
+                    height: 0;
+                    position: absolute;
+                    top: 13px;
+                    width: 0;
+                }
+                .arrow {
+                    left: -10px;
+                    border-right: 10px solid #F4F4F4 !important;
+                }
+                .arrow-alt {
+                    right: -10px;
+                    left: auto;
+                    border-left: 10px solid #F4F4F4 !important;
+                }
+            }
+            .notification {
+                background: none repeat scroll 0 0 #FFFFFF;
+                margin-top: 10px;
+                padding: 8px;
+                border-radius: 5px;
+            }
+        }
+        .timeline-icon {
+            left: -30px;
+            position: absolute;
+            top: 15px;
+            background: #EF6F66;
+            box-shadow: 0 0 0 3px #EF6F66;
+            border: 3px solid #FFFFFF;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            display: block;
+            height: 12px;
+            width: 12px;
+        }
+    }
+}

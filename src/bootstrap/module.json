@@ -1,0 +1,9 @@
+{
+    "requires": [
+        "ngRoute",
+        "ui.router",
+        "ltk.home",
+        "ltk.experiences",
+        "ltk.contact"
+    ]
+}

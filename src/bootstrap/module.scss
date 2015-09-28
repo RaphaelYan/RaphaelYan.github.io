@@ -1,0 +1,64 @@
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../bower_components/font-awesome/scss/font-awesome";
+
+$active-color: #7EA5CC;
+$inactive-color: #D6D3D5;
+
+body {
+    padding-top: 80px;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+.title-row {
+    font-size: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.footer {
+    margin: 60px 0 50px;
+}
+
+.copyright {
+    text-align: center;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.hr {
+    background-color: black;
+    height: 3px;
+    margin: 0 auto;
+    width: 33%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+@import 'src/experiences/module';
+@import 'src/contact/module';
+@import 'src/home/module';
+
+.mobile-only {
+    display: none;
+    visibility: hidden;
+    text-align: center;
+    font-size: 42px;
+}
+.desktop-only {
+    display: block;
+    visibility: visible;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-only {
+        display: block;
+        visibility: visible;
+    }
+    .desktop-only {
+        display: none;
+        visibility: hidden;
+    }
+}
